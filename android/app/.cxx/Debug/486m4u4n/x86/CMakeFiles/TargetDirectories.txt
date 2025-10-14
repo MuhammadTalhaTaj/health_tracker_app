@@ -1,0 +1,2 @@
+D:/Games/extra/office github/cocoon/android/app/.cxx/Debug/486m4u4n/x86/CMakeFiles/edit_cache.dir
+D:/Games/extra/office github/cocoon/android/app/.cxx/Debug/486m4u4n/x86/CMakeFiles/rebuild_cache.dir

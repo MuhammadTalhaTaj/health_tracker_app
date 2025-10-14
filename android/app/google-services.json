@@ -1,0 +1,37 @@
+{
+  "project_info": {
+    "project_number": "634545719947",
+    "project_id": "cocoon-464809",
+    "storage_bucket": "cocoon-464809.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634545719947:android:418da4e9e2fda11d44e28e",
+        "android_client_info": {
+          "package_name": "com.app.cocoon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_8jrkDGt72hcJRgPP6leKBS3Vb9a6nJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634545719947-ee59sj96p18i9b9outquu031oa0k6cqe.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.app.cocoon"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

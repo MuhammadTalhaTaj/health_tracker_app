@@ -1,0 +1,2 @@
+D:/Games/extra/office github/cocoon/android/app/.cxx/RelWithDebInfo/54n246l3/armeabi-v7a/CMakeFiles/edit_cache.dir
+D:/Games/extra/office github/cocoon/android/app/.cxx/RelWithDebInfo/54n246l3/armeabi-v7a/CMakeFiles/rebuild_cache.dir
