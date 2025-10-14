@@ -25,10 +25,10 @@ class PlanView extends StatelessWidget {
             actions: [
               TextButton(
                 onPressed: () {},
-                child: Text('Save',
-                    style: context.bodyMedium?.copyWith(
-                      color: context.secondary,
-                    )),
+                child: Text(
+                  'Save',
+                  style: context.bodyMedium?.copyWith(color: context.secondary),
+                ),
               ),
             ],
           ),
@@ -41,12 +41,15 @@ class PlanView extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border(
                     top: BorderSide(color: Colors.blue, width: 1.5),
-                    bottom:
-                    BorderSide(color: context.cardColor.withOpacity(0.6)),
+                    bottom: BorderSide(
+                      color: context.cardColor.withOpacity(0.6),
+                    ),
                   ),
                 ),
-                padding:
-                const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 12,
+                ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -55,12 +58,15 @@ class PlanView extends StatelessWidget {
                       children: [
                         Text(
                           week['week'] as String,
-                          style: context.bodyMedium
-                              ?.copyWith(fontWeight: FontWeight.w600),
+                          style: context.bodyMedium?.copyWith(
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                         Text(
                           week['dateRange'] as String,
-                          style: context.bodySmall?.copyWith(color: context.grey),
+                          style: context.bodySmall?.copyWith(
+                            color: context.grey,
+                          ),
                         ),
                       ],
                     ),
@@ -79,16 +85,27 @@ class PlanView extends StatelessWidget {
                 child: ListView.builder(
                   itemCount: 7,
                   itemBuilder: (context, index) {
-                    final days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+                    final days = [
+                      "Mon",
+                      "Tue",
+                      "Wed",
+                      "Thu",
+                      "Fri",
+                      "Sat",
+                      "Sun",
+                    ];
                     final weekData = week['days'] as List;
-                    final workout = weekData
-                        .firstWhereOrNull((d) => d['day'] == days[index]);
+                    final workout = weekData.firstWhereOrNull(
+                      (d) => d['day'] == days[index],
+                    );
 
                     return Column(
                       children: [
                         Padding(
                           padding: const EdgeInsets.symmetric(
-                              horizontal: 16, vertical: 4),
+                            horizontal: 16,
+                            vertical: 4,
+                          ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -100,8 +117,9 @@ class PlanView extends StatelessWidget {
                                   children: [
                                     Text(
                                       days[index],
-                                      style: context.bodySmall
-                                          ?.copyWith(color: context.grey),
+                                      style: context.bodySmall?.copyWith(
+                                        color: context.grey,
+                                      ),
                                     ),
                                     if (workout != null)
                                       Text(
@@ -129,7 +147,7 @@ class PlanView extends StatelessWidget {
                                           borderRadius: BorderRadius.only(
                                             topLeft: Radius.circular(10),
                                             bottomLeft: Radius.circular(10),
-                                          )
+                                          ),
                                         ),
                                       ),
                                       Expanded(
@@ -144,27 +162,34 @@ class PlanView extends StatelessWidget {
                                           padding: const EdgeInsets.all(10),
                                           child: Row(
                                             mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
+                                                MainAxisAlignment.spaceBetween,
                                             children: [
                                               Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment.start,
+                                                    CrossAxisAlignment.start,
                                                 children: [
                                                   Container(
                                                     padding:
-                                                    const EdgeInsets.symmetric(
-                                                        horizontal: 6, vertical: 2),
+                                                        const EdgeInsets.symmetric(
+                                                          horizontal: 6,
+                                                          vertical: 2,
+                                                        ),
                                                     decoration: BoxDecoration(
-                                                      color: Color(workout['workout']
-                                                      ['color']),
+                                                      color: Color(
+                                                        workout['workout']['color'],
+                                                      ),
                                                       borderRadius:
-                                                      BorderRadius.circular(4),
+                                                          BorderRadius.circular(
+                                                            4,
+                                                          ),
                                                     ),
                                                     child: Text(
                                                       workout['workout']['tag'],
-                                                      style: context.bodyExtraSmall
+                                                      style: context
+                                                          .bodyExtraSmall
                                                           ?.copyWith(
-                                                          color: Colors.white),
+                                                            color: Colors.white,
+                                                          ),
                                                     ),
                                                   ),
                                                   const SizedBox(height: 6),
@@ -172,16 +197,20 @@ class PlanView extends StatelessWidget {
                                                     workout['workout']['title'],
                                                     style: context.bodyMedium
                                                         ?.copyWith(
-                                                      fontWeight: FontWeight.w500,
-                                                      color: context.primary,
-                                                    ),
+                                                          fontWeight:
+                                                              FontWeight.w500,
+                                                          color:
+                                                              context.primary,
+                                                        ),
                                                   ),
                                                 ],
                                               ),
                                               Text(
                                                 workout['workout']['duration'],
-                                                style: context.bodySmall?.copyWith(
-                                                    color: context.grey),
+                                                style: context.bodySmall
+                                                    ?.copyWith(
+                                                      color: context.grey,
+                                                    ),
                                               ),
                                             ],
                                           ),
@@ -202,8 +231,10 @@ class PlanView extends StatelessWidget {
 
               // Bottom Week summary
               Container(
-                padding:
-                const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                  vertical: 12,
+                ),
                 decoration: BoxDecoration(
                   border: Border(
                     top: BorderSide(color: context.secondary, width: 1),
@@ -212,13 +243,20 @@ class PlanView extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("Week 2",
-                        style: context.bodyMedium
-                            ?.copyWith(color: context.primary)),
-                    Text("December 14–22",
-                        style: context.bodySmall?.copyWith(color: context.grey)),
-                    Text("Total: 60min",
-                        style: context.bodySmall?.copyWith(color: context.grey)),
+                    Text(
+                      "Week 2",
+                      style: context.bodyMedium?.copyWith(
+                        color: context.primary,
+                      ),
+                    ),
+                    Text(
+                      "December 14–22",
+                      style: context.bodySmall?.copyWith(color: context.grey),
+                    ),
+                    Text(
+                      "Total: 60min",
+                      style: context.bodySmall?.copyWith(color: context.grey),
+                    ),
                   ],
                 ),
               ),

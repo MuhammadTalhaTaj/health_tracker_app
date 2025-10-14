@@ -46,7 +46,7 @@ class NutritionView extends StatelessWidget {
                             width: 25,
                           ),
                         ),
-                
+
                         GestureDetector(
                           onTap: () => controller.openCalendarBottomSheet(),
                           child: Row(
@@ -75,14 +75,14 @@ class NutritionView extends StatelessWidget {
                         Container(),
                       ],
                     ),
-                
+
                     14.h,
-                
+
                     Text(
                       'Today, ${controller.formattedReadableDate(controller.selectedDate)}',
                       style: context.bodyMedium,
                     ),
-                
+
                     8.h,
                     SizedBox(
                       height: 90,
@@ -107,14 +107,24 @@ class NutritionView extends StatelessWidget {
                       ),
                     ),
                     14.h,
-                
+
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text("Workouts", style: context.headlineMedium),
                         Row(
                           children: [
-                           controller.isDaytime(DateTime.now())?Assets.icons.sunPng.image(height: 20,width: 20,color: context.primary):Assets.icons.moon.image(height: 20,width: 20,color: context.primary),
+                            controller.isDaytime(DateTime.now())
+                                ? Assets.icons.sunPng.image(
+                                    height: 20,
+                                    width: 20,
+                                    color: context.primary,
+                                  )
+                                : Assets.icons.moon.image(
+                                    height: 20,
+                                    width: 20,
+                                    color: context.primary,
+                                  ),
                             6.w,
                             Text('9', style: context.bodyMedium),
                           ],
@@ -127,27 +137,29 @@ class NutritionView extends StatelessWidget {
                       subtitle: 'December 22 - 25m • 30m',
                       onTap: () {},
                     ),
-                
+
                     16.h,
-                
+
                     Text('My Insights', style: context.headlineMedium),
                     16.h,
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Expanded(child: CaloriesCard(total: 2500, remaining: 1950)),
+                        Expanded(
+                          child: CaloriesCard(total: 2500, remaining: 1950),
+                        ),
                         12.w,
                         Expanded(child: WeightCard(weightKg: 75, delta: 1.6)),
                       ],
                     ),
-                           
+
                     16.h,
                     HydrationCard(
                       progress: 0.0,
                       totalLiters: 2.0,
                       currentMl: 0.0,
                     ),
-                 26.h,
+                    26.h,
                   ],
                 ),
               ),
@@ -158,6 +170,3 @@ class NutritionView extends StatelessWidget {
     );
   }
 }
-
-
-
