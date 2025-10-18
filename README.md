@@ -5,9 +5,21 @@ A new Flutter project.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+Apk link : https://drive.google.com/file/d/1m0LKQP30lH8rpqTN8_lOnPD39FfzLRy9/view?usp=sharing
 
 
-https://github.com/user-attachments/assets/2745d819-b3e4-4dcf-b1a4-9508bba7a6b6
+Video:
+   https://drive.google.com/file/d/1AX60UDJn0CcOTyeFa8K9ZeoHKLg72gsI/view?usp=sharing
+
+Dependency Use and why:
+      Getx: state management 
+      Svg:  for icons
+      percent indicator: show percentage
+      Table calander: for calander
+      flutter gen: for showing assets imgaes in good way 
+
+      
+Screen shots: 
 ![WhatsApp Image 2025-10-18 at 15 44 11_17fa2f0f](https://github.com/user-attachments/assets/21c02a55-297e-4bb2-9d54-5976f85a6527)
 ![WhatsApp Image 2025-10-18 at 15 44 14_b6014ae4](https://github.com/user-attachments/assets/9295f52a-e170-4962-9841-39c5774dd61e)
 ![WhatsApp Image 2025-10-18 at 15 44 10_d97b8c6e](https://github.com/user-attachments/assets/757a498a-e16b-46d4-8f44-e7505194e9fc)
@@ -15,6 +27,7 @@ https://github.com/user-attachments/assets/2745d819-b3e4-4dcf-b1a4-9508bba7a6b6
 
 Uploading WhatsApp Video 2025-10-18 at 15.44.20_0ce72faf.mp4…
 
+https://github.com/user-attachments/assets/2745d819-b3e4-4dcf-b1a4-9508bba7a6b6
 
 
 A few resources to get you started if this is your first Flutter project:
