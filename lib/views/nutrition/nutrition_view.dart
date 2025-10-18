@@ -86,9 +86,10 @@ class NutritionView extends StatelessWidget {
                     8.h,
                     SizedBox(
                       height: 90,
-                      child: ListView.builder(
+                      child: ListView.separated(
                         scrollDirection: Axis.horizontal,
                         itemCount: controller.weekDays.length,
+                        separatorBuilder: (context, index) => 10.w,
                         itemBuilder: (context, idx) {
                           final dt = controller.weekDays[idx];
                           final bool selected =

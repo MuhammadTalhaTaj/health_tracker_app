@@ -35,7 +35,6 @@ class PlanView extends StatelessWidget {
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Week header
               Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
@@ -229,7 +228,6 @@ class PlanView extends StatelessWidget {
                 ),
               ),
 
-              // Bottom Week summary
               Container(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 16,
