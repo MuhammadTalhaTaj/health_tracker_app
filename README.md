@@ -12,11 +12,11 @@ Video:
    https://drive.google.com/file/d/1AX60UDJn0CcOTyeFa8K9ZeoHKLg72gsI/view?usp=sharing
 
 Dependency Use and why:
-      Getx: state management 
-      Svg:  for icons
-      percent indicator: show percentage
-      Table calander: for calander
-      flutter gen: for showing assets imgaes in good way 
+      Getx: state management   
+      Svg:  for icons    
+      percent indicator: show percentage   
+      Table calander: for calander    
+      flutter gen: for showing assets imgaes in good way     
 
       
 Screen shots: 
