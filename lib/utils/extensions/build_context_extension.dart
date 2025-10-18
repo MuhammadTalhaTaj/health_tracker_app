@@ -1,5 +1,4 @@
 import 'package:live_score_app/res/constants/imports.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
 import 'app_theme_extension.dart';
 
@@ -157,23 +156,3 @@ ScaffoldFeatureController<SnackBar, SnackBarClosedReason> showSnackBar(
   );
 }
 
-Future<bool?> showErrorToastMessage(String message) {
-  return Fluttertoast.showToast(
-      msg: message,
-      toastLength: Toast.LENGTH_SHORT,
-      timeInSecForIosWeb: 1,
-      backgroundColor: Colors.red,
-      textColor: Colors.white,
-      fontSize: 16.0);
-}
-
-Future<bool?> showSuccessfulToastMessage(String message, {bool showLongLength=false}) {
-  return Fluttertoast.showToast(
-      msg: message,
-
-      toastLength:showLongLength?Toast.LENGTH_LONG: Toast.LENGTH_SHORT,
-      timeInSecForIosWeb: 1,
-      backgroundColor: Color(0xff2d4630),
-      textColor: Colors.white,
-      fontSize: 16.0);
-}

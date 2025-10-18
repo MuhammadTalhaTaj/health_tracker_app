@@ -96,11 +96,7 @@ class MoodView extends StatelessWidget {
                     Spacer(),
                     AppButton.primary(
                       title: "Continue",
-                      onPressed: () {
-                        showSuccessfulToastMessage(
-                          "You are feeling $label today!",
-                        );
-                      },
+
                     ),
                   ],
                 ),

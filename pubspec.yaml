@@ -39,19 +39,10 @@ dependencies:
   http:
   flutter_svg:
   cached_network_image:
-  fluttertoast:
   intl:
-  skeletonizer:
   flutter_gen:
-  image_cropper:
-  image_picker:
-  loading_overlay_pro:
-  loading_animation_widget:
   table_calendar:
   percent_indicator:
-  ruler_scale_indicator:
-  syncfusion_flutter_calendar: ^31.1.23
-
 dev_dependencies:
   build_runner:
   flutter_gen_runner:
